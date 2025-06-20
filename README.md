@@ -1,14 +1,6 @@
-# 🧪 Edge Detection Viewer – Android + OpenCV-C++ + JNI
+# 🧪 Edge Detection APP – Android + OpenCV-C++ + JNI
 
 This is a minimal Android app that captures real-time camera frames, sends them to native C++ code via JNI, processes them using OpenCV (Canny Edge Detection), and renders the result back onto the screen.
-
----
-
-## 📱 Preview
-
-| Camera Feed | Edge Detection |
-|-------------|----------------|
-| Coming soon | Coming soon    |
 
 ---
 
@@ -51,29 +43,24 @@ EdgeDetectionApp/
 ## 🚀 Setup Instructions
 
 ### ✅ 1. Clone the Repository
-```bash
+bash
 git clone https://github.com/your-username/edge-detection-app.git
 cd edge-detection-app
 
 ✅ 2. Download & Set Up OpenCV SDK
+
 Download OpenCV Android SDK
 
 Extract the SDK.
 
 Set this path in your CMakeLists.txt:
 
-cmake
-Copy
-Edit
 set(OpenCV_DIR path/to/OpenCV-android-sdk/sdk/native/jni)
+
 🔁 Sync project with Gradle after this.
 
 ✅ 3. Build Configuration (build.gradle.kts)
-Make sure you have:
 
-kotlin
-Copy
-Edit
 defaultConfig {
     ...
     ndk {
@@ -90,11 +77,10 @@ externalNativeBuild {
 ✅ 4. Permissions
 Add this to AndroidManifest.xml:
 
-xml
-Copy
-Edit
 <uses-permission android:name="android.permission.CAMERA" />
+
 ✅ 5. Run on Physical Device or ARM64 Emulator
+
 ⚠️ NDK builds support armeabi-v7a and arm64-v8a, not x86.
 
 🧠 Architecture
@@ -108,25 +94,10 @@ OpenCV → applies Canny Edge Detection
 
 Bitmap is updated directly with edges
 
-📈 TODOs / Next Steps
- Use OpenGL for rendering output
+---
 
- Add toggle button: Original vs Processed
-
- Add FPS counter
-
- Add Gaussian blur / Thresholding
-
-🧑‍💻 Author
+## 🧑‍💻 Author
 Shubham Mali
 B.Tech, IIIT Bhopal
 [LinkedIn](https://www.linkedin.com/in/shubham1144/)
  – GitHub
-
-📜 License
-MIT License – free to use and modify.
-
-
----
-
-Let me know your GitHub repo link (if ready), and I can personalize the clone/setup parts for you. Or I can generate a `README.md` file you can directly drop into your project folder.
