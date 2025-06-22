@@ -43,8 +43,8 @@ EdgeDetectionApp/
 ## 🚀 Setup Instructions
 
 ### ✅ 1. Clone the Repository
-bash
-git clone https://github.com/your-username/edge-detection-app.git
+
+git clone https://github.com/Shubham11440/EdgeDetectionApp.git
 cd edge-detection-app
 
 ✅ 2. Download & Set Up OpenCV SDK
